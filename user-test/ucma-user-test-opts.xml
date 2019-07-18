@@ -1,0 +1,16 @@
+<root>
+
+<options>
+
+	<option>
+		<name>size</name>
+		<ctype>int</ctype>
+		<has_arg>required_argument</has_arg>
+		<usage>-s, --size number</usage>
+		<desc>size</desc>
+		<default>262144</default>
+	</option>
+
+</options>
+
+</root>
