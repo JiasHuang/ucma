@@ -159,6 +159,9 @@ int ucma_free(struct ucma_devctx *devctx, struct ucma_reqbuf *reqbuf)
 		return -EINVAL;
 	}
 
+	/* remove UCMA_F_PUT_ON_CLOSE */
+	bufctx->flags &= ~UCMA_F_PUT_ON_CLOSE;
+
 	return ucma_bufctx_put(bufctx);
 }
 
